@@ -1,4 +1,4 @@
-import styles from "./DynamicCard.module.css";
+import styles from "./DynamicCardEX.module.css";
 type Tag = {
   id: string;
   label: string;

@@ -1,0 +1,204 @@
+.card {
+  width: 350px;
+  max-width: 650px;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card h1 {
+  font-size: 1.1em;
+  color: #202223;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+.card .preview {
+  width: 100%;
+  border-radius: 12px;
+  border: solid 1px #e0e0e0;
+  margin-bottom: 15px;
+}
+.card p {
+  font-size: 0.9em;
+  color: #4b4b4b;
+  margin: 0 0 15px 0;
+  text-align: left;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.card h5 {
+  font-size: 0.75em;
+  color: #999;
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+.card .buttonContainer {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card .buttonContainer button {
+  margin-top: auto;
+  margin-top: 5px;
+  padding: 10px 16px;
+  flex: 1;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.card .viewProjectButton {
+  background: linear-gradient(90deg, #0099ff 0%, #fc5bff 50%, #00dbde 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 6s ease-in-out infinite;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .viewProjectButton:hover {
+  animation: gradientShift 2s ease-in-out infinite;
+  border-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 153, 255, 0.4),
+    0 4px 12px rgba(252, 91, 255, 0.3), 0 4px 12px rgba(0, 219, 222, 0.3);
+}
+
+.card .githubButton {
+  background: #ffffff;
+  border: 1px solid #d1d5db !important;
+  color: #6b7280;
+}
+
+.card .githubButton:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  color: #4b5563;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .buttonContainer button img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.9;
+}
+.tags {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.tags span {
+  border-radius: 100px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 0.75em;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.tags img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.85em;
+    margin: 0 0 12px 0;
+  }
+
+  .tags span {
+    font-size: 0.7em;
+    padding: 5px 10px;
+  }
+
+  .tags img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .card h1 {
+    font-size: 0.95em;
+    margin: 0 0 8px 0;
+  }
+
+  .card p {
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+  }
+
+  .card h5 {
+    font-size: 0.65em;
+    margin: 8px 0 0 auto;
+  }
+
+  .tags {
+    gap: 6px;
+    margin-bottom: 0;
+  }
+
+  .tags span {
+    font-size: 0.65em;
+    padding: 4px 8px;
+  }
+
+  .tags img {
+    width: 12px;
+    height: 12px;
+  }
+}

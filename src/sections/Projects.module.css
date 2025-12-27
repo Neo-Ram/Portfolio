@@ -1,45 +1,41 @@
-.experienceSection {
+.projectsSection {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 0px 60px 60px;
-  justify-content: center;
   align-items: center;
+  padding: 0px 60px 60px;
+  background-color: #f8f9fa;
 }
 
-.experienceTitle {
+.projectsTitle {
   font-size: 1.8em;
   font-weight: 600;
   margin-bottom: 40px;
   color: #212529;
   letter-spacing: -0.5px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   width: 100%;
-  text-align: center;
 }
-
-.experienceTitle::before,
-.experienceTitle::after {
+.projectsTitle::before,
+.projectsTitle::after {
   content: "";
   flex: 1;
   height: 1px;
   background: #e0e0e0;
 }
-
 .cardsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  max-width: 950px;
+  gap: 60px;
 }
 
 @media (max-width: 768px) {
   .cardsContainer {
-    max-width: 100%;
-    padding: 0 20px;
+    grid-template-columns: 1fr;
+    max-width: 400px;
   }
 }
