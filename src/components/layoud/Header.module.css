@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  display: flex;
+  background-color: #ffffffb3;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header p {
+  margin-left: 30px;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-right: 40px;
+}
+.header a {
+  text-decoration: none;
+  padding: 5px 8px;
+  color: var(--myblack);
+  border-radius: 8px;
+  position: relative;
+  transition: color 0.15s ease-in-out;
+}
+/* Pseudo-elemento que contiene el gradiente */
+a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: linear-gradient(to right, #66d4ff, #1abeff);
+  z-index: -1;
+  /* Empieza con tamaño 0, crece desde el centro */
+  transform: scale(0);
+  transition: transform 0.15s ease-in-out;
+}
+a:hover::before {
+  /* Se expande para llenar todo el botón */
+  transform: scale(1);
+}
+a:hover {
+  color: #fff;
+}

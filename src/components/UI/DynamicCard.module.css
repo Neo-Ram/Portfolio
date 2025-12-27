@@ -1,0 +1,124 @@
+.card {
+  width: 100%;
+  max-width: 700px;
+
+  border-radius: 18px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card h1 {
+  font-size: 1.1em;
+  color: #202223;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+.card p {
+  font-size: 0.9em;
+  color: #4b4b4b;
+  margin: 0 0 15px 0;
+  text-align: left;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.card h5 {
+  font-size: 0.75em;
+  color: #999;
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+
+.tags {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.tags span {
+  border-radius: 100px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 0.75em;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.tags img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.85em;
+    margin: 0 0 12px 0;
+  }
+
+  .tags span {
+    font-size: 0.7em;
+    padding: 5px 10px;
+  }
+
+  .tags img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .card h1 {
+    font-size: 0.95em;
+    margin: 0 0 8px 0;
+  }
+
+  .card p {
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+  }
+
+  .card h5 {
+    font-size: 0.65em;
+    margin: 8px 0 0 auto;
+  }
+
+  .tags {
+    gap: 6px;
+    margin-bottom: 0;
+  }
+
+  .tags span {
+    font-size: 0.65em;
+    padding: 4px 8px;
+  }
+
+  .tags img {
+    width: 12px;
+    height: 12px;
+  }
+}

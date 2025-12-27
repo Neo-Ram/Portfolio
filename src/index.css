@@ -1,0 +1,10 @@
+:root {
+  font-family: sans-serif;
+  --myblack: #212529;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
