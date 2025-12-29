@@ -17,7 +17,7 @@ function DynamicCard({ title, description, tags, date }: Props) {
   return (
     <div className={styles.card}>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <p dangerouslySetInnerHTML={{ __html: description }} />
       <div className={styles.tags}>
         {tags.map((tag) => (
           <span

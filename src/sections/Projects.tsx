@@ -113,6 +113,8 @@ function Projects() {
                 bgGradient: "linear-gradient(135deg, #a8eaa1ff, #3dd22cff)",
               },
             ]}
+            projectLink="https://www.npmjs.com/package/neo-ram-prisma?activeTab=readme"
+            githubLink="https://github.com/Neo-Ram/prisma-ui-library"
           />
         </div>
         <div>
@@ -164,6 +166,8 @@ function Projects() {
                 bgGradient: "linear-gradient(135deg, #4e4e4eff, #111111ff)",
               },
             ]}
+            projectLink="https://prisma-drab.vercel.app/"
+            githubLink="https://github.com/Neo-Ram/Prisma"
           />
         </div>
         <div>

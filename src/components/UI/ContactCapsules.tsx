@@ -5,11 +5,21 @@ type Props = {
   link?: string;
 };
 function ContactCapsules({ icon, title, link }: Props) {
+  const handleClick = () => {
+    if (link) {
+      if (link.startsWith("mailto:")) {
+        window.location.href = link;
+      } else {
+        window.open(link, "_blank");
+      }
+    }
+  };
+
   return (
-    <div className={styles.capsule}>
+    <button className={styles.capsule} onClick={handleClick} disabled={!link}>
       <img src={icon} alt="iconlink" />
-      <a href={link}>{title}</a>
-    </div>
+      {title}
+    </button>
   );
 }
 

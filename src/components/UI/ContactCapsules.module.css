@@ -8,9 +8,15 @@
   cursor: pointer;
   display: flex;
   transition: background-color 0.2s ease-in-out;
+  align-items: center;
+  font-family: inherit;
 }
-.capsule:hover {
+.capsule:hover:not(:disabled) {
   background-color: #f0f0f0;
+}
+.capsule:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 .capsule img {
   width: 16px;

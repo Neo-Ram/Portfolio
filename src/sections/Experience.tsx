@@ -38,8 +38,8 @@ function Experience() {
       </h1>
       <div className={styles.cardsContainer}>
         <DynamicCardEX
-          title="Sistema gestor de seguros"
-          description="Desarrollé un sistema gestor de seguros utilizando React para el frontend y Node.js para el backend. Implementé funcionalidades clave como la gestión de pólizas, clientes y reclamaciones, mejorando la eficiencia operativa en un 30%."
+          title="Seguros Adriana Lastra"
+          description="Insurance CRM System. Engineered a custom client management solution, handling the full lifecycle from requirements gathering to deployment.<br /> <br /> The system ensures strict data organization and features automated tools to track payment deadlines, generate printable PDF reports, and create personalized birthday cards to enhance client engagement."
           tags={[
             {
               id: "1",
@@ -90,7 +90,7 @@ function Experience() {
               bgGradient: "linear-gradient(135deg, #b390fbff, #7f47f0ff)",
             },
           ]}
-          date="Enero 2022 - Diciembre 2022"
+          date="June 2022 - December 2025"
         />
       </div>
     </section>

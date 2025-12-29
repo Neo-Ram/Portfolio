@@ -11,9 +11,24 @@ type Props = {
   description: string;
   tags: Tag[];
   preview: string;
+  projectLink?: string;
+  githubLink?: string;
 };
 
-function DynamicCard({ title, description, tags, preview }: Props) {
+function DynamicCard({
+  title,
+  description,
+  tags,
+  preview,
+  projectLink,
+  githubLink,
+}: Props) {
+  const handleClick = (link?: string) => {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <div className={styles.card}>
       <img src={preview} alt="preview" className={styles.preview} />
@@ -32,10 +47,18 @@ function DynamicCard({ title, description, tags, preview }: Props) {
         ))}
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.viewProjectButton}>
+        <button
+          className={styles.viewProjectButton}
+          onClick={() => handleClick(projectLink)}
+          disabled={!projectLink}
+        >
           View Project <img src="/src/assets/ExternalGray.svg" alt="" />
         </button>
-        <button className={styles.githubButton}>
+        <button
+          className={styles.githubButton}
+          onClick={() => handleClick(githubLink)}
+          disabled={!githubLink}
+        >
           <img src="/src/assets/Github2.svg" alt="" /> Github
         </button>
       </div>
