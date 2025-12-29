@@ -1,0 +1,19 @@
+.capsule {
+  padding: 10px 20px;
+  background-color: #fdfdfd;
+  border: solid 1px #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #5d5d5d;
+  cursor: pointer;
+  display: flex;
+  transition: background-color 0.2s ease-in-out;
+}
+.capsule:hover {
+  background-color: #f0f0f0;
+}
+.capsule img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}

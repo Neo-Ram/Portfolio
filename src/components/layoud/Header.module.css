@@ -12,16 +12,16 @@
   right: 0;
   z-index: 1000;
 }
-.header p {
+.header .txt {
   margin-left: 30px;
 }
-.header ul {
+.header .list {
   display: flex;
   list-style: none;
   gap: 10px;
   margin-right: 40px;
 }
-.header a {
+.header .links {
   text-decoration: none;
   padding: 5px 8px;
   color: var(--myblack);
@@ -30,7 +30,7 @@
   transition: color 0.15s ease-in-out;
 }
 /* Pseudo-elemento que contiene el gradiente */
-a::before {
+.header .links::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -41,10 +41,10 @@ a::before {
   transform: scale(0);
   transition: transform 0.15s ease-in-out;
 }
-a:hover::before {
+.header .links:hover::before {
   /* Se expande para llenar todo el botón */
   transform: scale(1);
 }
-a:hover {
+.header .links:hover {
   color: #fff;
 }

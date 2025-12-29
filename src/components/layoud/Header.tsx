@@ -2,22 +2,32 @@ import styles from "./header.module.css";
 function header() {
   return (
     <header className={styles.header}>
-      <p>Ramon Franco</p>
-      <ul>
+      <p className={styles.txt}>Ramon Franco</p>
+      <ul className={styles.list}>
         <li>
-          <a href="#">Experience</a>
+          <a className={styles.links} href="#">
+            Experience
+          </a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a className={styles.links} href="#">
+            Projects
+          </a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a className={styles.links} href="#">
+            Skills
+          </a>
         </li>
         <li>
-          <a href="#">About me</a>
+          <a className={styles.links} href="#">
+            About me
+          </a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a className={styles.links} href="#">
+            Contact
+          </a>
         </li>
       </ul>
     </header>
