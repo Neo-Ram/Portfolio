@@ -1,0 +1,17 @@
+.skillCapsule {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 230px;
+}
+.skillCapsule img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
