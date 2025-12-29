@@ -21,7 +21,7 @@ function Welcome() {
         </div>
         <div className={styles.contactCapsule}>
           <ContactCapsules
-            icon="/assets/LinkedIn.svg"
+            icon="/assets/Linkedin.svg"
             title="Linkedin"
             link="https://www.linkedin.com/in/ram%C3%B3n-franco-a45496274/"
           />

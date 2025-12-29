@@ -79,7 +79,7 @@ function Skills() {
         </div>
         <div>
           <SkillCapsule
-            technology="/assets/TypeScript.svg"
+            technology="/assets/Typescript.svg"
             title="TypeScript"
             color1="#6e95ea"
             color2="#2e34e4"
@@ -95,7 +95,7 @@ function Skills() {
         </div>
         <div>
           <SkillCapsule
-            technology="/assets/HTML5.svg"
+            technology="/assets/Html5.svg"
             title="HTML5"
             color1="#ffa64dff"
             color2="#fc673aff"
@@ -103,7 +103,7 @@ function Skills() {
         </div>
         <div>
           <SkillCapsule
-            technology="/assets/CSS3.svg"
+            technology="/assets/Css3.svg"
             title="CSS3"
             color1="#98b6ffff"
             color2="#2e63ebff"

@@ -50,7 +50,7 @@ function Experience() {
             {
               id: "2",
               label: "TypeScript",
-              icon: "/assets/TypeScript.svg",
+              icon: "/assets/Typescript.svg",
               bgGradient: "linear-gradient(135deg, #6e95eaff, #2e34e4ff)",
             },
             {
