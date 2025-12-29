@@ -52,14 +52,14 @@ function DynamicCard({
           onClick={() => handleClick(projectLink)}
           disabled={!projectLink}
         >
-          View Project <img src="/src/assets/ExternalGray.svg" alt="" />
+          View Project <img src="/assets/ExternalGray.svg" alt="" />
         </button>
         <button
           className={styles.githubButton}
           onClick={() => handleClick(githubLink)}
           disabled={!githubLink}
         >
-          <img src="/src/assets/Github2.svg" alt="" /> Github
+          <img src="/assets/Github2.svg" alt="" /> Github
         </button>
       </div>
     </div>

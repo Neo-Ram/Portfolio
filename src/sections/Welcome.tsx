@@ -14,27 +14,27 @@ function Welcome() {
       <div className={styles.contactCapsules}>
         <div className={styles.contactCapsule}>
           <ContactCapsules
-            icon="/src/assets/Email.svg"
+            icon="/assets/Email.svg"
             title="Email"
             link="mailto:ramon.franco.reyes@gmail.com"
           />
         </div>
         <div className={styles.contactCapsule}>
           <ContactCapsules
-            icon="/src/assets/LinkedIn.svg"
+            icon="/assets/LinkedIn.svg"
             title="Linkedin"
             link="https://www.linkedin.com/in/ram%C3%B3n-franco-a45496274/"
           />
         </div>
         <div className={styles.contactCapsule}>
           <ContactCapsules
-            icon="/src/assets/Github3.svg"
+            icon="/assets/Github3.svg"
             title="Github"
             link="https://github.com/Neo-Ram"
           />
         </div>
         <div className={styles.contactCapsule}>
-          <ContactCapsules icon="/src/assets/PDF.svg" title="Curriculum" />
+          <ContactCapsules icon="/assets/PDF.svg" title="Curriculum" />
         </div>
       </div>
     </div>

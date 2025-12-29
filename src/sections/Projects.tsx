@@ -78,38 +78,38 @@ function Projects() {
               {
                 id: "1",
                 label: "React",
-                icon: "/src/assets/React.svg",
+                icon: "/assets/React.svg",
                 bgGradient: "linear-gradient(135deg, #61dafb, #1e90ff)",
               },
               {
                 id: "2",
                 label: "TypeScript",
-                icon: "/src/assets/TypeScript.svg",
+                icon: "/assets/TypeScript.svg",
                 bgGradient: "linear-gradient(135deg, #6e95eaff, #2e34e4ff)",
               },
               {
                 id: "3",
                 label: "Css3",
-                icon: "/src/assets/Css3.svg",
+                icon: "/assets/Css3.svg",
                 bgGradient: "linear-gradient(135deg, #98b6ffff, #2e63ebff)",
               },
               {
                 id: "3",
                 label: "Git",
-                icon: "/src/assets/Git.svg",
+                icon: "/assets/Git.svg",
                 bgGradient: "linear-gradient(135deg, #f8bd93ff, #ff9b20ff)",
               },
               {
                 id: "4",
                 label: "NPM",
-                icon: "/src/assets/Npm.svg",
+                icon: "/assets/Npm.svg",
                 bgGradient: "linear-gradient(135deg, #f26060ff, #c13333ff)",
               },
 
               {
                 id: "5",
                 label: "Node.js",
-                icon: "/src/assets/Node.svg",
+                icon: "/assets/Node.svg",
                 bgGradient: "linear-gradient(135deg, #a8eaa1ff, #3dd22cff)",
               },
             ]}
@@ -126,43 +126,43 @@ function Projects() {
               {
                 id: "1",
                 label: "React",
-                icon: "/src/assets/React.svg",
+                icon: "/assets/React.svg",
                 bgGradient: "linear-gradient(135deg, #61dafb, #1e90ff)",
               },
               {
                 id: "2",
                 label: "TypeScript",
-                icon: "/src/assets/TypeScript.svg",
+                icon: "/assets/TypeScript.svg",
                 bgGradient: "linear-gradient(135deg, #6e95eaff, #2e34e4ff)",
               },
               {
                 id: "3",
                 label: "Css3",
-                icon: "/src/assets/Css3.svg",
+                icon: "/assets/Css3.svg",
                 bgGradient: "linear-gradient(135deg, #98b6ffff, #2e63ebff)",
               },
               {
                 id: "4",
                 label: "Git",
-                icon: "/src/assets/Git.svg",
+                icon: "/assets/Git.svg",
                 bgGradient: "linear-gradient(135deg, #f8bd93ff, #ff9b20ff)",
               },
               {
                 id: "4",
                 label: "NPM",
-                icon: "/src/assets/Npm.svg",
+                icon: "/assets/Npm.svg",
                 bgGradient: "linear-gradient(135deg, #f26060ff, #c13333ff)",
               },
               {
                 id: "5",
                 label: "Node.js",
-                icon: "/src/assets/Node.svg",
+                icon: "/assets/Node.svg",
                 bgGradient: "linear-gradient(135deg, #a8eaa1ff, #3dd22cff)",
               },
               {
                 id: "6",
                 label: "Vercel",
-                icon: "/src/assets/Vercel.svg",
+                icon: "/assets/Vercel.svg",
                 bgGradient: "linear-gradient(135deg, #4e4e4eff, #111111ff)",
               },
             ]}
@@ -179,13 +179,13 @@ function Projects() {
               {
                 id: "1",
                 label: "React",
-                icon: "/src/assets/React.svg",
+                icon: "/assets/React.svg",
                 bgGradient: "linear-gradient(135deg, #61dafb, #1e90ff)",
               },
               {
                 id: "1",
                 label: "TypeScript",
-                icon: "/src/assets/TypeScript.svg",
+                icon: "/assets/TypeScript.svg",
                 bgGradient: "linear-gradient(135deg, #6e95eaff, #2e34e4ff)",
               },
             ]}
