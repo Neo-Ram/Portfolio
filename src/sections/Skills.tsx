@@ -2,7 +2,7 @@ import styles from "./Skills.module.css";
 import SkillCapsule from "../components/UI/SkillCapsule";
 function Skills() {
   return (
-    <section className={styles.skillsSection}>
+    <section className={styles.skillsSection} data-section="skills">
       <h1 className={styles.skillsTitle}>Skills</h1>
       <div className={styles.capsulesContainer}>
         <SkillCapsule

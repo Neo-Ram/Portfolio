@@ -2,7 +2,7 @@ import DynamicCardEX from "../components/UI/DynamicCardEX";
 import styles from "./Experience.module.css";
 function Experience() {
   return (
-    <section className={styles.experienceSection}>
+    <section className={styles.experienceSection} data-section="experience">
       <h1 className={styles.experienceTitle}>Experience</h1>
       <div className={styles.cardsContainer}>
         <DynamicCardEX

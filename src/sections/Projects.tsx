@@ -2,7 +2,7 @@ import styles from "./Projects.module.css";
 import DynamicCardP from "../components/UI/DynamicCardP";
 function Projects() {
   return (
-    <section className={styles.projectsSection}>
+    <section className={styles.projectsSection} data-section="projects">
       <h1 className={styles.projectsTitle}>Projects</h1>
       <div className={styles.cardsContainer}>
         <DynamicCardP

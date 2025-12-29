@@ -11,9 +11,12 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  align-items: center;
 }
 .header .txt {
   margin-left: 30px;
+  font-weight: 700;
+  font-size: 18px;
 }
 .header .list {
   display: flex;
@@ -23,28 +26,19 @@
 }
 .header .links {
   text-decoration: none;
-  padding: 5px 8px;
+  padding: 8px 16px;
   color: var(--myblack);
   border-radius: 8px;
   position: relative;
-  transition: color 0.15s ease-in-out;
-}
-/* Pseudo-elemento que contiene el gradiente */
-.header .links::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 8px;
-  background: linear-gradient(to right, #66d4ff, #1abeff);
-  z-index: -1;
-  /* Empieza con tamaño 0, crece desde el centro */
-  transform: scale(0);
-  transition: transform 0.15s ease-in-out;
-}
-.header .links:hover::before {
-  /* Se expande para llenar todo el botón */
-  transform: scale(1);
+  transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 .header .links:hover {
-  color: #fff;
+  color: #4a4a4a;
+}
+.header .links.active {
+  background-color: #ffffff;
+  color: var(--myblack);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
