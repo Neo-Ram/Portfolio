@@ -128,3 +128,20 @@
     background-position: 0% center;
   }
 }
+
+@media (max-width: 768px) {
+  .welcome {
+    height: 700px;
+    padding-bottom: 80px;
+  }
+  .welcome h1 {
+    font-size: 36px;
+  }
+  .welcome span {
+    font-size: 65px;
+  }
+  .welcome p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}

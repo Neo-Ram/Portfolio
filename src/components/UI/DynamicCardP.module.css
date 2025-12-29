@@ -126,9 +126,9 @@
 }
 .tags span {
   border-radius: 100px;
-  padding: 6px 12px;
+  padding: 5px 10px;
   color: #fff;
-  font-size: 0.75em;
+  font-size: 0.7em;
   display: flex;
   gap: 5px;
   justify-content: space-between;
@@ -142,12 +142,11 @@
 
 @media (max-width: 768px) {
   .card {
-    max-width: 100%;
-    padding: 15px;
+    max-width: 300px;
   }
 
   .card h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .card p {
@@ -158,46 +157,6 @@
   .tags span {
     font-size: 0.7em;
     padding: 5px 10px;
-  }
-
-  .tags img {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    max-width: 100%;
-    min-width: 100%;
-    padding: 12px;
-    border-radius: 12px;
-  }
-
-  .card h1 {
-    font-size: 0.95em;
-    margin: 0 0 8px 0;
-  }
-
-  .card p {
-    font-size: 0.8em;
-    margin: 0 0 10px 0;
-    line-height: 1.4;
-  }
-
-  .card h5 {
-    font-size: 0.65em;
-    margin: 8px 0 0 auto;
-  }
-
-  .tags {
-    gap: 6px;
-    margin-bottom: 0;
-  }
-
-  .tags span {
-    font-size: 0.65em;
-    padding: 4px 8px;
   }
 
   .tags img {

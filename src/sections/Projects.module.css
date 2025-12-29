@@ -84,8 +84,16 @@
 }
 
 @media (max-width: 768px) {
+  .projectsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 40px;
+    background-color: #f8f9fa;
+  }
   .cardsContainer {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    width: 100%;
+    gap: 30px;
+    margin: auto;
   }
 }
