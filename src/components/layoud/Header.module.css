@@ -17,12 +17,15 @@
   margin-left: 30px;
   font-weight: 700;
   font-size: 18px;
+  animation: slideDownHeader 0.4s ease-out forwards;
 }
 .header .list {
   display: flex;
   list-style: none;
   gap: 10px;
   margin-right: 40px;
+  animation: slideDownHeader 0.4s ease-out 0.1s forwards;
+  opacity: 0;
 }
 .header .links {
   text-decoration: none;
@@ -41,4 +44,15 @@
   background-color: #ffffff;
   color: var(--myblack);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDownHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

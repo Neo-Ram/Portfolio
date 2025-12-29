@@ -12,7 +12,7 @@
 }
 .card h1 {
   font-size: 1.1em;
-  color: #202223;
+  color: #343a40;
   margin: 0 0 10px 0;
   font-weight: 600;
 }
@@ -27,7 +27,7 @@
 }
 .card p {
   font-size: 0.9em;
-  color: #4b4b4b;
+  color: #535353;
   margin: 0 0 15px 0;
   text-align: left;
   width: 100%;

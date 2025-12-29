@@ -77,7 +77,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <p className={styles.txt}>Ramon Franco</p>
+      <p className={styles.txt}></p>
       <ul className={styles.list}>
         <li>
           <a

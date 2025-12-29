@@ -10,13 +10,18 @@
   font-size: 1.8em;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #212529;
+  color: #666666;
   letter-spacing: -0.5px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 100%;
+  transition: color 0.5s ease-out;
+}
+
+.skillsTitle.inView {
+  color: #1a1a1a;
 }
 .skillsTitle::before,
 .skillsTitle::after {
@@ -32,4 +37,74 @@
   justify-items: center;
   max-width: 950px;
   gap: 20px;
+}
+
+/* Por defecto ocultas - no se ven hasta que .visible esté presente */
+.capsulesContainer > div {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animación cuando .visible está presente */
+.capsulesContainer.visible > div {
+  visibility: visible;
+  animation: fadeInOnly 0.5s ease-out forwards;
+}
+
+/* Patrón diagonal: aparece primero (0,0), luego (1,1) y (0,1), luego (2,2), (1,2) y (0,2), etc. */
+.capsulesContainer.visible > div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.capsulesContainer.visible > div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.capsulesContainer.visible > div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.capsulesContainer.visible > div:nth-child(4) {
+  animation-delay: 0.1s;
+}
+
+.capsulesContainer.visible > div:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.capsulesContainer.visible > div:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.capsulesContainer.visible > div:nth-child(7) {
+  animation-delay: 0.2s;
+}
+
+.capsulesContainer.visible > div:nth-child(8) {
+  animation-delay: 0.3s;
+}
+
+.capsulesContainer.visible > div:nth-child(9) {
+  animation-delay: 0.4s;
+}
+
+.capsulesContainer.visible > div:nth-child(10) {
+  animation-delay: 0.3s;
+}
+
+.capsulesContainer.visible > div:nth-child(11) {
+  animation-delay: 0.4s;
+}
+
+.capsulesContainer.visible > div:nth-child(12) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInOnly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -1,9 +1,41 @@
 import DynamicCardEX from "../components/UI/DynamicCardEX";
 import styles from "./Experience.module.css";
+import { useState, useEffect, useRef } from "react";
+
 function Experience() {
+  const [isInView, setIsInView] = useState(false);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        threshold: 1,
+      }
+    );
+
+    const currentRef = titleRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
     <section className={styles.experienceSection} data-section="experience">
-      <h1 className={styles.experienceTitle}>Experience</h1>
+      <h1
+        ref={titleRef}
+        className={`${styles.experienceTitle} ${isInView ? styles.inView : ""}`}
+      >
+        Experience
+      </h1>
       <div className={styles.cardsContainer}>
         <DynamicCardEX
           title="Sistema gestor de seguros"

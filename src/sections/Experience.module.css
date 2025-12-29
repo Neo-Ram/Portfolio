@@ -11,13 +11,18 @@
   font-size: 1.8em;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #212529;
+  color: #666666;
   letter-spacing: -0.5px;
   display: flex;
   align-items: center;
   gap: 20px;
   width: 100%;
   text-align: center;
+  transition: color 0.5s ease-out;
+}
+
+.experienceTitle.inView {
+  color: #1a1a1a;
 }
 
 .experienceTitle::before,

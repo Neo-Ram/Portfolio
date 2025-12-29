@@ -12,10 +12,18 @@ function Welcome() {
         project.
       </p>
       <div className={styles.contactCapsules}>
-        <ContactCapsules icon="/src/assets/Email.svg" title="Email" />
-        <ContactCapsules icon="/src/assets/LinkedIn.svg" title="Linkedin" />
-        <ContactCapsules icon="/src/assets/Github3.svg" title="Github" />
-        <ContactCapsules icon="/src/assets/PDF.svg" title="Curriculum" />
+        <div className={styles.contactCapsule}>
+          <ContactCapsules icon="/src/assets/Email.svg" title="Email" />
+        </div>
+        <div className={styles.contactCapsule}>
+          <ContactCapsules icon="/src/assets/LinkedIn.svg" title="Linkedin" />
+        </div>
+        <div className={styles.contactCapsule}>
+          <ContactCapsules icon="/src/assets/Github3.svg" title="Github" />
+        </div>
+        <div className={styles.contactCapsule}>
+          <ContactCapsules icon="/src/assets/PDF.svg" title="Curriculum" />
+        </div>
       </div>
     </div>
   );
