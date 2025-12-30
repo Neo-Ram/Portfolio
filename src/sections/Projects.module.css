@@ -27,8 +27,11 @@
 .projectsTitle::after {
   content: "";
   flex: 1;
-  height: 1px;
-  background: #e0e0e0;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,13 Q5,4 10,13 Q15,22 20,13 Q25,4 30,13 Q35,22 40,13 Q45,4 50,13 Q55,22 60,13 Q65,4 70,13 Q75,22 80,13 Q85,4 90,13 Q95,22 100,13" stroke="%23e0e0e0" stroke-width="1" fill="none" stroke-linecap="round"/></svg>');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100% 100%;
 }
 .cardsContainer {
   display: grid;

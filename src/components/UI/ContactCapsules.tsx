@@ -3,10 +3,13 @@ type Props = {
   icon: string;
   title: string;
   link?: string;
+  onClick?: () => void;
 };
-function ContactCapsules({ icon, title, link }: Props) {
+function ContactCapsules({ icon, title, link, onClick }: Props) {
   const handleClick = () => {
-    if (link) {
+    if (onClick) {
+      onClick();
+    } else if (link) {
       if (link.startsWith("mailto:")) {
         window.location.href = link;
       } else {
@@ -16,7 +19,11 @@ function ContactCapsules({ icon, title, link }: Props) {
   };
 
   return (
-    <button className={styles.capsule} onClick={handleClick} disabled={!link}>
+    <button
+      className={styles.capsule}
+      onClick={handleClick}
+      disabled={!link && !onClick}
+    >
       <img src={icon} alt="iconlink" />
       {title}
     </button>
